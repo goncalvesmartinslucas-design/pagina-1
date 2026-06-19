@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Campo de Futebol */
+#campo {
+    width: 400px;
+    height: 300px;
+    background-color: #4caf50;
+    margin: 20px auto;
+    position: relative;
+    border: 5px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Trave */
+#trave {
+    width: 150px;
+    height: 60px;
+    border: 4px solid white;
+    border-top: none;
+    position: absolute;
+    top: 0;
+    left: 125px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Goleiro (Círculo Vermelho) */
+#goleiro {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    left: 185px;
+    transition: left 0.2s ease-out; /* Suaviza o movimento */
+}
+
+/* Bola */
+#bola {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20px;
+    left: 190px;
+    transition: all 0.5s ease-in-out; /* Suaviza o chute */
+}
+
+/* Botões */
+.botoes {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+#placar {
+    font-size: 20px;
+    margin-top: 10px;
+}
